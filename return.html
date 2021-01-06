@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove duplicate</title>
+</head>
+
+<body>
+    <script>
+        function removeDuplicate(string) {
+            return string
+                .split('')
+                .filter(function(item, pos, self) {
+                    return self.indexOf(item) == pos;
+
+                })
+                .join('');
+        }
+        console.log(removeDuplicate('more learn javascript dude '));
+    </script>
+
+</body>
+
+</html>
