@@ -8,8 +8,11 @@
 </head>
 
 <body>
+    /
+
     <script>
         function removeDuplicate(string) {
+
             return string
                 .split('')
                 .filter(function(item, pos, self) {
@@ -18,7 +21,10 @@
                 })
                 .join('');
         }
-        console.log(removeDuplicate('more learn javascript dude '));
+        //console.log(removeDuplicate('more learn javascript dude '));
+        const string = prompt('Enter a string :');
+        const result = removeDuplicate(string)
+        console.log(result);
     </script>
 
 </body>
