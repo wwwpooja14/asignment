@@ -8,11 +8,14 @@
 </head>
 
 <body>
+    <p>enter a string</p>
+    <input id="string">
+    <button onclick="value">enter</button>
 
 
     <script>
         function removeDuplicate(string) {
-
+            document.getElementById("value").innerHTML = " ";
             return string
                 .split('')
                 .filter(function(item, pos, self) {
@@ -20,13 +23,10 @@
 
                 })
                 .join('');
-        }
-        //console.log(removeDuplicate('more learn javascript dude '));
-        const string = prompt('Enter a string :');
-        const result = removeDuplicate(string)
-        document.write(result);
-    </script>
 
+        }
+        document.write(removeDuplicate(string));
+    </script>
 </body>
 
 </html>
